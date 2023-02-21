@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Поиск позиций сайта</title>
+</head>
+<body>
+	<h1>Поиск позиций сайта</h1>
+<form method="POST" action="/search">
+    <div>
+        <label for="url">Адрес сайта:</label>
+        <input type="text" id="url" name="url" required>
+    </div>
+    <div>
+        <label for="queries">Ключевые запросы (до 100 штук):</label>
+        <textarea id="keywords" name="keywords" rows="4" cols="50" required></textarea>
+    </div>
+    <div>
+        <label for="search_engine">Поисковая система:</label>
+        <select id="search_engine" name="search_engine">
+            <option value="google">Google</option>
+            <option value="yandex">Yandex</option>
+        </select>
+    </div>
+    <div>
+        <label for="region">Регион:</label>
+        <input type="text" id="region" name="region">
+    </div>
+    <div>
+        <label for="city">Город:</label>
+        <input type="text" id="city" name="city">
+    </div>
+    <div>
+        <label for="state">Область:</label>
+        <input type="text" id="state" name="state">
+    </div>
+    <div>
+        <input type="submit" value="Найти">
+    </div>
+</form>
+
+</body>
+</html>
